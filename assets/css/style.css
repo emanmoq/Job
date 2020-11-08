@@ -1,0 +1,95 @@
+
+
+/* public */
+img{
+    width:100%;
+}
+ul{
+    padding:0;
+    margin:0;
+    list-style: none;
+}
+a{
+text-decoration: none;
+color:black;
+}
+a:hover{
+    color:black;
+    text-decoration: none;
+}
+body{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    overflow-x: hidden;
+    font-size: 16px;
+}
+.HeroCont{
+    background-image: url("../images/Home/hero.png");
+    padding-top:33px;
+    padding-bottom: 200px;
+}
+.logo {
+    font-size: 3.000em;
+    font-weight: bold;
+    
+}
+.logo a{
+    color:white;
+}
+.topHeader{
+    margin-bottom:23px;
+}
+.topHeaderContact{
+    display: inline-block;
+    margin-right:60px;
+}
+.topHeaderContact:last-child{
+    margin-right: 0;;
+}
+.contactIcon{
+    width:40px;
+    overflow: hidden;
+    margin-right:10px;
+    display: inline-block;
+    float: left;
+}
+.contactDetails {
+    display: inline-block;
+    float: left;
+}
+.contactDetails span{
+    display: block;
+    font-size: 0.900em;
+    color:white;
+}
+.contactDetails p{
+    font-size: 1.400em;
+    color: white;
+    font-weight: bold;
+}
+.navbar{
+    padding:20px 30px;
+    background-color: #CCB892;
+    border-radius: 10px;;
+    width: 100%;;
+}
+.navbar-expand-lg .navbar-nav .nav-link,.loginBtns a{
+    font-size:1.100em;
+    font-weight: 500;
+    padding:0 30px;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+    padding-left: 0;
+}
+.navbar-expand-lg .navbar-nav .nav-link.active{
+    color:#18407C
+}
+.nav-item{
+    padding:0;
+}
+.loginBtns a.postJob{
+    background-color: #18407C;
+    border-radius: 10px;
+    color:white
+}

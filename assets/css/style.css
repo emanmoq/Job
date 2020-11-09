@@ -786,7 +786,7 @@ height:50px;
     transition: all .5s;;
     animation:sticky;
 }
-@media(min-width:300px) and (max-width:850px){
+@media(min-width:300px) and (max-width:767px){
     body{
         font-size:12px;
     }
@@ -850,6 +850,7 @@ height:60px;
     margin-bottom: 20px;
     color: #8C98AA;
     display: block;
+    float: left;
 }
 .Popular{
 margin-top:20px;
@@ -881,5 +882,37 @@ margin-top:20px;
         }
         .subscribeBtn {
             width: 40%;}
+    
         
+}
+@media(min-width:768px) and (max-width:1023px){
+
+    .sectionTitle.trustedTitle a{
+        margin-right: 10px;
+    }
+    .IntrestedImg{
+        width:60px;
+        height:60px;
+        padding: 17px;
+    }
+    .intrestedJobDetails{
+        width:80%;
+    }
+    .CompaniesCar .owl-stage-outer { 
+        overflow: hidden;
+        padding:20px 0;
+        }
+        .intrestedtag{
+            margin-bottom: 20px;
+            color: #8C98AA;
+            display: block;
+            float: left;
+        }
+        .PopularSection{
+            width:100%;
+        }  
+        .careerBox{
+height:530px
+        } 
+    
 }

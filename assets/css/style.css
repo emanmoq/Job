@@ -914,5 +914,7 @@ margin-top:20px;
         .careerBox{
 height:530px
         } 
-    
+        .menu .logo{
+            display: block;
+        }
 }

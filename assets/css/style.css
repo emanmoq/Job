@@ -812,11 +812,17 @@ height:50px;
 }
 .innerFooter:before{
     display: none;
-}.regBox{
+}
+.regBox{
     background: #FFFFFF 0% 0% no-repeat padding-box;
 box-shadow: 0px 3px 26px #00000029;
 border-radius: 20px;
 padding:50px;
+}
+.postJobBox.regBox{
+    box-shadow: none;
+    padding: 0;
+    margin-top:40px;
 }
 .innerBody{
     padding:100px 0;
@@ -857,6 +863,13 @@ padding:50px;
 .form-group{
     width:100%;
     margin-top:20px;
+    position: relative;
+}
+.regBox .form-group a {
+    position: absolute;
+    right:10px;
+    top:40px;
+    color:#8C98AA;
 }
 .regBox form .form-control{
     width:100%;
@@ -870,6 +883,7 @@ padding:50px;
     text-align: left;
     margin-bottom: 10px;
 }
+
 .checkboxformgroup label.checkBoxLabel{
    color:#8C98AA;
    display: inline-block;
@@ -887,6 +901,228 @@ padding:50px;
 .regBtn:hover{
     background-color: transparent;
     color:#18407C;
+}
+textarea.form-control{
+    resize: none;
+    height:150px;
+}
+.googlemap{
+    border-radius: 25px;;
+    overflow: hidden;
+}
+.haveAccoun p{
+    color:#121212;
+    font-size: 1.100em;
+    margin-bottom: 12px;;
+}
+.haveAccountBox {
+    background-color: #EDF0F5;
+    border-radius: 10px;
+    padding:15px 20px;
+}
+.haveAccountBox span{
+    font-size: 1.100em;
+    color:#8C98AA;
+    width:85%;
+    display: block;
+    float: left;
+}
+.halfFormGroup{
+    width:49%;
+    display:inline-block;
+    margin-right:15px;
+}
+.halfFormGroup.noMargin{
+    margin-right:0;
+}
+.threeFormGrpup{
+    width:32%;
+    margin-right:15px;
+    display: inline-block;
+}
+.threeFormGrpup.noMargin{
+    margin-right: 0;
+}
+.postJobForm label span{
+    font-size: .900em;
+    color:#8C98AA;
+}
+select.form-control {
+    color:#8C98AA;
+}
+textarea.form-control.jobTextArea{
+    height:150px;
+}
+.CompanyDetails{
+    margin-top:30px;
+}
+form h4,.SocialMediaBox h4{
+    font-size:1.650em;
+}
+.SocialMediaBox h4{
+    color:white;
+}
+#button{
+    position: relative;
+    left:-1px;
+    background-color:#446655;
+    }
+    .SubmitPost{
+        margin-top:50px;
+    }
+    
+    .loginBox{
+        width:60%;
+        float: left;
+        padding:35px 25px;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    .SocialMediaBox{
+        background-color: #18407C;
+        width:40%;
+        float: left;
+        padding:35px 25px;
+    }
+    .SocialMediaBox p{
+        color:white;
+    }
+
+    .loginContainer{
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        box-shadow: 0px 3px 26px #00000029;
+        border-radius: 20px;
+       
+        overflow: hidden;
+    }
+    .forgetPassword{
+        float: right;margin-top:14px;
+        color:#121212;
+        font-size: .9em;
+
+    }
+    .loginSocial{
+        width:100%;
+        height:50px;
+        border-radius: 10px;
+        margin-bottom:20px;
+        padding:14px 20px;
+    }
+    .facebookLogin{
+        background-color: #3B5999;
+        
+    }
+    .loginIcon{
+        padding-right:20px;
+        border-right:1px solid #fff;
+        margin-right:20px;
+        display:inline-block;
+        width:30px;
+    }
+    .loginSocial a{
+        font-size: .9em;
+        color:#FFFFFF;
+    }
+    .googleLogin .loginIcon{
+        border-right:1px solid #121212;
+    }
+    .googleLogin{
+        background-color: white;;
+    }
+    .googleLogin a{
+color:#121212;
+    }
+    .linkedLogin{
+background-color: #0077B5;
+    }
+    .fa-google {
+        background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+      }
+      .DashboardBody{
+          width:100%;
+          height:100%;
+      }
+      .leftSide{
+        width: 25%;
+        height: 100%;
+        float: left;
+        border-collapse: collapse;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+box-shadow: 0px 3px 26px #00000029;
+padding:50px 0;
+
+      }
+      .NameSection{
+          padding:0 30px;
+          margin-bottom:20px;
+      }
+      .DashboardImg{
+        box-shadow: 0px 3px 10px #00000029;
+        width:90px;
+        height:90px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-right:20px;
+      }
+      .DashboardNav .nav-link{
+          padding: 20px 50px;
+          border-top:1px solid #00000029;
+          color:#121212
+      }
+      .DashboardNav .nav-link.active{
+background-color: #18407C;
+      }
+      .NameSection h4{
+          font-size:1.650em;
+          color:#121212
+      }
+      .DashboardNav .nav-link i{
+     margin-right: 15px;;
+          border-radius: 50%;
+          background-color: #EDF0F5;
+          color:#121212;
+          padding:10px;
+      }
+      .rightSide{
+          width:75%;
+          float: left;
+          padding:70px 100px;;
+          
+
+      }
+      .DashboardBox{
+        box-shadow: 0px 3px 26px #00000029;
+        border-radius: 20px;
+        padding:30px 0;
+        text-align: center;
+      }
+.DashboardIcon{
+    margin:auto;
+    border-radius: 50%;
+    background-color: #EDF0F5;
+    color:#121212;
+    padding:10px;
+    width:50px;
+    height: 50px;
+    text-align: center;
+    margin-bottom: 10px;;
+}
+.DashboardIcon i{
+    line-height: 30px;
+}
+.DashboardBox h4{
+    font-size:1.650em;
+    color:#121212;
+    margin-bottom: 10px;
+}
+.DashboardBox p{
+    font-size: 1.100em;
+    color:#8C98AA;
+    margin:0;
 }
 @media(min-width:300px) and (max-width:767px){
     body{
@@ -986,8 +1222,20 @@ margin-top:20px;
         }
         .subscribeBtn {
             width: 40%;}
-    
-        
+            .halfFormGroup {
+                width: 100%;
+            margin-right:0;
+            } 
+                .threeFormGrpup {
+                    width: 100%;
+                    margin-right:0;}
+                    footer {
+                        padding-top: 50px;}
+.loginBox {
+    width: 100%;}   
+.SocialMediaBox{
+    width:100%
+}     
 }
 @media(min-width:768px) and (max-width:1023px){
 
@@ -1021,6 +1269,31 @@ height:530px
         .menu .logo{
             display: block;
         }
+        .contactDetails span {
+            font-size: 0.700em;}
+            .topHeaderContact {
+                margin-right: 8px;
+            }
+            .contactDetails p {
+                font-size: 1.00em;}
+                .contactIcon {
+                    width: 32px;
+                } 
+                .halfFormGroup {
+                    width: 48%;} 
+                    .threeFormGrpup {
+                        width: 31%;}   
+                        .topHeader{
+                            display: none;
+                        }  
+                        footer{
+                            padding-top:20px;
+                        } 
+                        .loginBox {
+                            width: 100%;}   
+                        .SocialMediaBox{
+                            width:100%
+                        }          
 }
 @media(min-width:1024px) and (max-width:1100px){
     .navbar-expand-lg .navbar-nav .nav-link, .loginBtns a {
@@ -1046,4 +1319,9 @@ margin-right:10px;
             display: block;
             float: left;
             margin-bottom: 10px;
+}
+.halfFormGroup {
+    width: 48%;}
+    .threeFormGrpup {
+        width: 31%;}
 }

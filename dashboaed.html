@@ -124,80 +124,95 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <h1>Register</h1>
-                    <p><a href="#">Home/</a> <a href="#">Register</a> </p>
+                    <h1>Dashboard</h1>
+                    <p><a href="#">Home/</a> <a href="#">Dashboard</a> </p>
 
                 </div>
             </div>
         </div>
     </div>
-    <section class="innerBody">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-6 col-md-8">
-                    <div class="regBox">
-                        <form>
-
-                            <label for="upladImg">
-                                <div class="uploadImg">
-                                    <i class="far fa-user"></i>
-                                    <input type="file" id="upladImg" onchange="readURL2(this)">
-                                    <img src="" alt="">
-                                </div><i class="fas fa-camera"></i>Add Your Photo
-                            </label>
-                            <script>
-                                function readURL2(input) {
-                                    var $input = input;
-                                    if (input.files && input.files[0]) {
-                                        var reader = new FileReader();
-                                        reader.onload = function (e) {
-                                            $($input).next()
-                                                .attr('src', e.target.result)
-                                                .css("display", "block");
-                                            $(".fa-user").css("display", "none")
-                                            $(".uploadImg").css("padding","0")
-                                        };
-                                        reader.readAsDataURL(input.files[0]);
-                                    }
-                                }
-                            </script>
-                            <div class="form-group">
-                                <label for="">Enter Your Name</label>
-                                <input type="text" class="form-control" placeholder="John William">
-                            </div>
-                            <div class="form-group">
-                                <label for="">Enter Your Email</label>
-                                <input type="email" class="form-control" placeholder="johnwilliam@info">
-                            </div>
-                            <div class="form-group">
-                                <label for="">Enter Your Password</label>
-                                <a href=""><i class="lni lni-lock"></i></a>
-                                <input type="password" class="form-control" placeholder="***********">
-                            </div>
-                            <div class="form-group">
-                                <label for="">Confirm Your Password</label>
-                                <a href=""><i class="lni lni-lock"></i></a>
-                                <input type="password" class="form-control" placeholder="***********">
-                            </div>
-                            <div class="form-group">
-                                <label for="">Phone Number</label>
-                                <input type="text" class="form-control" placeholder="012345 789">
-                            </div>
-                            <div class="form-group checkboxformgroup">
-                                <input type="checkbox" id="checkboxInput">
-                                <label for="checkboxInput" class="checkBoxLabel">I Agree terms and conditions.</label>
-                            </div>
-                            <div class="submit text-center">
-                                <button class="btn regBtn">Register</button>
-                            </div>
-                        </form>
-                    </div>
+    <div class="DashboardBody">
+        <div class="leftSide">
+            <div class="NameSection clearfix">
+                <div class="DashboardImg float-left">
+                <img src="assets/images/Dashboard/1.png" alt="">
                 </div>
+                <h4 class="float-left">John William</h4>
+            </div>
+            <div class="nav DashboardNav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <a class="nav-link active" id="Dashboard-home-tab" data-toggle="pill" href="#Dashboard-home" role="tab" aria-controls="Dashboard-home" aria-selected="true"><i class="lni lni-layout"></i> Dashboard</a>
+                <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false"><i class="fas fa-suitcase"></i>Applied Jobs</a>
+                <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false"><i class="lni lni-heart"></i>Saved Jobs</a>
+                <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false"><i class="lni lni-write"></i>Posted Jobs</a>
+                <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false"><i class="far fa-user"></i> My Profile</a>
+                <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false"><i class="fas fa-sign-out-alt"></i> Logout</a>
+
+  
             </div>
         </div>
+        <div class="rightSide">
+            <div class="tab-content" id="v-pills-tabContent">
+                <div class="tab-pane fade show active" id="Dashboard-home" role="tabpanel" aria-labelledby="Dashboard-home-tab">
+                    <div class="container">
+                        <div class="row">
+                            <div  class="col-lg-3 col-md-6">
+                                <div class="DashboardBox">
+                                    <div class="DashboardIcon">
+                                        <i class="lni lni-layout"></i>
+                                    </div>
+                                    <h4>1500</h4>
+                                    <p>
+                                        Companies View
+                                    </p>
 
-    </section>
+                                </div>
+                            </div>
+                            <div  class="col-lg-3 col-md-6">
+                                <div class="DashboardBox">
+                                    <div class="DashboardIcon">
+                                        <i class="lni lni-layout"></i>
+                                    </div>
+                                    <h4>1500</h4>
+                                    <p>
+                                        Companies View
+                                    </p>
 
+                                </div>
+                            </div>
+                            <div  class="col-lg-3 col-md-6">
+                                <div class="DashboardBox">
+                                    <div class="DashboardIcon">
+                                        <i class="lni lni-layout"></i>
+                                    </div>
+                                    <h4>1500</h4>
+                                    <p>
+                                        Companies View
+                                    </p>
+
+                                </div>
+                            </div>
+                            <div  class="col-lg-3 col-md-6">
+                                <div class="DashboardBox">
+                                    <div class="DashboardIcon">
+                                        <i class="lni lni-layout"></i>
+                                    </div>
+                                    <h4>1500</h4>
+                                    <p>
+                                        Companies View
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">...</div>
+                <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">...</div>
+                <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...</div>
+              </div>
+        </div>
+    </div>
     <footer class="innerFooter">
         <div class="container">
             <div class="row">

@@ -124,8 +124,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <h1>Register</h1>
-                    <p><a href="#">Home/</a> <a href="#">Register</a> </p>
+                    <h1>Login</h1>
+                    <p><a href="#">Home/</a> <a href="#">Login</a> </p>
 
                 </div>
             </div>
@@ -134,64 +134,49 @@
     <section class="innerBody">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-lg-6 col-md-8">
-                    <div class="regBox">
-                        <form>
+                <div class="col-lg-12 col-md-12">
+                    <div class="loginContainer clearfix">
+                        <div class="regBox loginBox ">
+                            <form class="loginForms">
+                                <h4> Login Using Email</h4>
+                                <div class="form-group">
+                                    <label for="">Enter Your Email</label>
+                                    <input type="email" class="form-control" placeholder="johnwilliam@info">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Enter Your Password</label>
+                                    <a href=""><i class="lni lni-lock"></i></a>
+                                    <input type="password" class="form-control" placeholder="***********">
+                                </div>
+                                <div class="clearfix">
+                                    <a href="#" class="forgetPassword">Forget Password?</a>
+                                </div>
 
-                            <label for="upladImg">
-                                <div class="uploadImg">
-                                    <i class="far fa-user"></i>
-                                    <input type="file" id="upladImg" onchange="readURL2(this)">
-                                    <img src="" alt="">
-                                </div><i class="fas fa-camera"></i>Add Your Photo
-                            </label>
-                            <script>
-                                function readURL2(input) {
-                                    var $input = input;
-                                    if (input.files && input.files[0]) {
-                                        var reader = new FileReader();
-                                        reader.onload = function (e) {
-                                            $($input).next()
-                                                .attr('src', e.target.result)
-                                                .css("display", "block");
-                                            $(".fa-user").css("display", "none")
-                                            $(".uploadImg").css("padding","0")
-                                        };
-                                        reader.readAsDataURL(input.files[0]);
-                                    }
-                                }
-                            </script>
-                            <div class="form-group">
-                                <label for="">Enter Your Name</label>
-                                <input type="text" class="form-control" placeholder="John William">
-                            </div>
-                            <div class="form-group">
-                                <label for="">Enter Your Email</label>
-                                <input type="email" class="form-control" placeholder="johnwilliam@info">
-                            </div>
-                            <div class="form-group">
-                                <label for="">Enter Your Password</label>
-                                <a href=""><i class="lni lni-lock"></i></a>
-                                <input type="password" class="form-control" placeholder="***********">
-                            </div>
-                            <div class="form-group">
-                                <label for="">Confirm Your Password</label>
-                                <a href=""><i class="lni lni-lock"></i></a>
-                                <input type="password" class="form-control" placeholder="***********">
-                            </div>
-                            <div class="form-group">
-                                <label for="">Phone Number</label>
-                                <input type="text" class="form-control" placeholder="012345 789">
-                            </div>
-                            <div class="form-group checkboxformgroup">
-                                <input type="checkbox" id="checkboxInput">
-                                <label for="checkboxInput" class="checkBoxLabel">I Agree terms and conditions.</label>
-                            </div>
-                            <div class="submit text-center">
-                                <button class="btn regBtn">Register</button>
-                            </div>
-                        </form>
+                                <div class="submit text-center">
+                                    <button class="btn regBtn">login</button>
+                                </div>
+                            </form>
+
+                        </div>
+                        <div class="SocialMediaBox">
+                            <h4>Using Social Media</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur augue scelerisque, bibendum mauris. ipsum. Sed
+                                vestibulum orci enim, non</p>
+
+                                <div class="loginSocial facebookLogin">
+                                    <a href=""><div class="loginIcon"><i class="fab fa-facebook-f"></i> </div>Sign in With Facebook</a>
+                                </div>
+                                <div class="loginSocial googleLogin">
+                                    <a href=""><div class="loginIcon"><i class="fab fa-google"></i> </div>Sign in With Google</a>
+                                </div>
+                                <div class="loginSocial linkedLogin">
+                                    <a href=""><div class="loginIcon"><i class="fab fa-linkedin-in"></i> </div>Sign in With Twitter</a>
+                                </div>
+
+                        </div>
+
                     </div>
+
                 </div>
             </div>
         </div>

@@ -124,8 +124,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <h1>Register</h1>
-                    <p><a href="#">Home/</a> <a href="#">Register</a> </p>
+                    <h1>Post a Job</h1>
+                    <p><a href="#">Home/</a> <a href="#">post job</a> </p>
 
                 </div>
             </div>
@@ -134,61 +134,96 @@
     <section class="innerBody">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-lg-6 col-md-8">
-                    <div class="regBox">
-                        <form>
-
-                            <label for="upladImg">
-                                <div class="uploadImg">
-                                    <i class="far fa-user"></i>
-                                    <input type="file" id="upladImg" onchange="readURL2(this)">
-                                    <img src="" alt="">
-                                </div><i class="fas fa-camera"></i>Add Your Photo
-                            </label>
-                            <script>
-                                function readURL2(input) {
-                                    var $input = input;
-                                    if (input.files && input.files[0]) {
-                                        var reader = new FileReader();
-                                        reader.onload = function (e) {
-                                            $($input).next()
-                                                .attr('src', e.target.result)
-                                                .css("display", "block");
-                                            $(".fa-user").css("display", "none")
-                                            $(".uploadImg").css("padding","0")
-                                        };
-                                        reader.readAsDataURL(input.files[0]);
-                                    }
-                                }
-                            </script>
-                            <div class="form-group">
-                                <label for="">Enter Your Name</label>
-                                <input type="text" class="form-control" placeholder="John William">
+                <div class="col-md-12">
+                    <div class="haveAccount">
+                        <p>Have an account?</p>
+                        <div class="haveAccountBox clearfix">
+                            <span>If you don't have an account you can create one below by entering your email
+                                address/username. Your account details will be confirmed via email.</span>
+                            <button class="btn regBtn float-right">Sign In</button>
+                        </div>
+                    </div>
+                    <div class="regBox postJobBox clearfix">
+                        <form class="postJobForm">
+                            <h4>Job Details</h4>
+                            <div class="form-group halfFormGroup">
+                                <label for="">Job Title</label>
+                                <input type="text" class="form-control" >
+                            </div>
+                            <div class="form-group halfFormGroup noMargin">
+                                <label for=""> Your Email</label>
+                                <input type="email" class="form-control">
+                            </div>
+                            <div class="form-group threeFormGrpup">
+                                <label for="">location <span>(optional)</span></label>
+                                <input type="text" class="form-control" placeholder="e.g. 'London'">
+                            </div>
+                            <div class="form-group threeFormGrpup">
+                                <label for="">Job Type</label>
+                               <select name="" id="" class="form-control"><option value="">Full Time</option></select>
+                            </div>
+                            <div class="form-group threeFormGrpup noMargin">
+                                <label for="">Job Category</label>
+                               <select name="" id="" class="form-control"><option value="">Choose a Category</option></select>
+                            </div>
+                            <div class="form-group threeFormGrpup">
+                                <label for="">Job Salary <span>(optional)</span></label>
+                                <select name="" id="" class="form-control"><option value="">Choose a Salary</option></select>
+                            </div>
+                            <div class="form-group threeFormGrpup">
+                                <label for="">Job career Level <span>(optional)</span></label>
+                               <select name="" id="" class="form-control"><option value="">Choose Career Level</option></select>
+                            </div>
+                            <div class="form-group threeFormGrpup noMargin">
+                                <label for="">Job Gender <span>(optional)</span></label>
+                               <select name="" id="" class="form-control"><option value="">Choose Gender</option></select>
+                            </div>
+                            <div class="form-group threeFormGrpup">
+                                <label for="">Job Industry <span>(optional)</span></label>
+                                <select name="" id="" class="form-control"><option value="">Choose Job Industry</option></select>
+                            </div>
+                            <div class="form-group threeFormGrpup">
+                                <label for="">Job career Level <span>(optional)</span></label>
+                               <select name="" id="" class="form-control"><option value="">Choose Career Level</option></select>
+                            </div>
+                            <div class="form-group threeFormGrpup noMargin">
+                                <label for="">Job Job Qualification  <span>(optional)</span></label>
+                               <select name="" id="" class="form-control"><option value="">Choose a Job Job Qualification</option></select>
                             </div>
                             <div class="form-group">
-                                <label for="">Enter Your Email</label>
-                                <input type="email" class="form-control" placeholder="johnwilliam@info">
+                                <label for="">Description</label>
+                             <textarea class="form-control jobTextArea"></textarea>
+                            </div>
+                            <div class="CompanyDetails">
+                                <h4>Company Details</h4>
+                            </div>
+                            <div class="form-group halfFormGroup">
+                                <label for="">Company Name</label>
+                                <input type="text" class="form-control" >
+                            </div>
+                            <div class="form-group halfFormGroup noMargin">
+                                <label for=""> Company Logo</label>
+                                <input type="file" class="form-control">
+                            </div>
+                       
+                            <div class="form-group threeFormGrpup">
+                                <label for="">Website <span>(optional)</span></label>
+                                <input type="text" class="form-control" placeholder="htttp//">
+                            </div>
+                            <div class="form-group threeFormGrpup">
+                                <label for="">Tag Line <span>(optional)</span></label>
+                               <select name="" id="" class="form-control"><option value="">Tagline of your company</option></select>
+                            </div>
+                            <div class="form-group threeFormGrpup noMargin">
+                                <label for="">Twitter username  <span>(optional)</span></label>
+                                <input type="text" class="form-control" placeholder="@yourcompany">
                             </div>
                             <div class="form-group">
-                                <label for="">Enter Your Password</label>
-                                <a href=""><i class="lni lni-lock"></i></a>
-                                <input type="password" class="form-control" placeholder="***********">
-                            </div>
-                            <div class="form-group">
-                                <label for="">Confirm Your Password</label>
-                                <a href=""><i class="lni lni-lock"></i></a>
-                                <input type="password" class="form-control" placeholder="***********">
-                            </div>
-                            <div class="form-group">
-                                <label for="">Phone Number</label>
-                                <input type="text" class="form-control" placeholder="012345 789">
-                            </div>
-                            <div class="form-group checkboxformgroup">
-                                <input type="checkbox" id="checkboxInput">
-                                <label for="checkboxInput" class="checkBoxLabel">I Agree terms and conditions.</label>
+                                <label for="">Description</label>
+                             <textarea class="form-control jobTextArea"></textarea>
                             </div>
                             <div class="submit text-center">
-                                <button class="btn regBtn">Register</button>
+                                <button class="btn regBtn SubmitPost">Submit Post</button>
                             </div>
                         </form>
                     </div>

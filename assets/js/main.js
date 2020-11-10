@@ -25,6 +25,9 @@ jQuery(function ($) {
     if (scrollTop >($('.HeroCont').height()+ 200)) {
         $('.menu').addClass('scrollNav');
     }
+    else if (scrollTop >($('.innerContent').height()+ 200)) {
+      $('.menu').addClass('scrollNav');
+  }
 
     else {
         $('.menu').removeClass('scrollNav');

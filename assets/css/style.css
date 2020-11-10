@@ -39,6 +39,8 @@ body{
 }
 .topHeader{
     margin-bottom:23px;
+    display: block;
+    padding:10px 0;
 }
 .topHeaderContact{
     display: inline-block;
@@ -116,9 +118,7 @@ body{
 .menu .logo a{
     color:#121212
 }
-.topHeader{
-    display: none;
-}
+
 .heroContent{
     margin-top: 250px;
 }
@@ -786,6 +786,108 @@ height:50px;
     transition: all .5s;;
     animation:sticky;
 }
+.innerMenu{
+    background-color: #CCB892;
+}
+.innerTopHadet .logo a{
+    color:#121212;
+}
+.innerTopHadet .contactDetails span,.contactDetails p {
+    color:#121212;
+}
+.innerTopHadet .contactIcon img {
+    filter: invert(100%); 
+}
+.innerContent{
+    background-image: url("../images/About/inner.png");
+    margin-top:0;
+    padding:100px 0;
+}
+.innerContent h1{
+    color:white;
+
+}
+.innerContent p a{
+    color:white;
+}
+.innerFooter:before{
+    display: none;
+}.regBox{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+box-shadow: 0px 3px 26px #00000029;
+border-radius: 20px;
+padding:50px;
+}
+.innerBody{
+    padding:100px 0;
+}
+.uploadImg{
+    width: 80px;
+    height:80px;
+    border-radius: 50%;
+    margin:auto;
+    margin-bottom:16px;
+    background-color: #EDF0F5;
+    text-align: center;
+    padding:25px 10px; 
+    overflow: hidden;
+
+}
+.regBox form label i{
+    margin-right:5px;
+}
+.regBox form label .uploadImg i{
+    font-size:26px;
+    margin:0;
+}
+.regBox form label{
+    font-size:0.900em;
+    text-align: center;
+    margin:auto;
+    display: block;
+}
+.uploadImg input[type="file"]{
+    opacity: 0;
+    width:0;
+    display: none;
+}
+.uploadImg img{
+    display: none;
+}
+.form-group{
+    width:100%;
+    margin-top:20px;
+}
+.regBox form .form-control{
+    width:100%;
+    border:1ps solid #DCE2EB;
+}
+.regBox form .form-control::placeholder{
+    color:#8C98AA;
+    font-size: 0.900em;;
+}
+.regBox form  .form-group label{
+    text-align: left;
+    margin-bottom: 10px;
+}
+.checkboxformgroup label.checkBoxLabel{
+   color:#8C98AA;
+   display: inline-block;
+}
+.regBtn{
+    background-color: #18407C;
+    color:white;
+    border-radius: 10px;
+    font-size: .900em;
+    padding:10px;
+    margin:auto;
+    width:130px;
+    border: 1px solid #18407C;
+}
+.regBtn:hover{
+    background-color: transparent;
+    color:#18407C;
+}
 @media(min-width:300px) and (max-width:767px){
     body{
         font-size:12px;
@@ -817,7 +919,9 @@ padding:0;
  .searchBox .formGroup .form-control{
 height:60px;
         }
-  
+        .topHeader{
+            display: none;
+        }
         .searchInner{
             height:auto
         }
@@ -825,7 +929,7 @@ height:60px;
             padding-top:20px;
         }
         .IntrestedBox {
-            padding: 39px 10px;
+           padding: 39px 10px;
             border: 2px solid transparent;
             border-left: 8px solid transparent;}
         .sectionTitle.trustedTitle a {
@@ -917,4 +1021,29 @@ height:530px
         .menu .logo{
             display: block;
         }
+}
+@media(min-width:1024px) and (max-width:1100px){
+    .navbar-expand-lg .navbar-nav .nav-link, .loginBtns a {
+    
+        padding: 0 13px;}
+        .CompaniesCarItem {
+         
+            padding: 30px 39px;}
+            .CompaniesCar .owl-stage-outer { 
+                overflow: hidden;
+                padding:20px 0;
+                }
+                .careerBox{
+                    height:530px
+                            }
+                            .topHeader{
+                                display: block
+                            }
+        .topHeaderContact{
+margin-right:10px;
+        }
+        .intrestedtag {
+            display: block;
+            float: left;
+            margin-bottom: 10px;
 }

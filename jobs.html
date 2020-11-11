@@ -476,8 +476,8 @@
                                 aria-valuemax="100"></div>
                         </div>
                         <div class="sliderCon">
-                            <input type="text" id="amount" readonly >
-
+                            <input type="text" id="amount" readonly>
+                            <div class="arrow-down"></div>
                             <div id="slider-range"></div>
                         </div>
 
@@ -571,20 +571,20 @@
     <script type="text/javascript" src="assets/js/main.js"></script>
 
     <script>
-        $( function() {
-          $( "#slider-range" ).slider({
-            range: true,
-            min: 0,
-            max: 30000,
-            values: [ 25000 ,30000  ],
-            slide: function( event, ui ) {
-              $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
-            }
-          });
-          $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
-            " - $" + $( "#slider-range" ).slider( "values", 1 ) );
-        } );
-        </script>
+        $(function () {
+            $("#slider-range").slider({
+                range: true,
+                min: 0,
+                max: 30000,
+                values: [25000, 30000],
+                slide: function (event, ui) {
+                    $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
+                }
+            });
+            $("#amount").val("$" + $("#slider-range").slider("values", 0) +
+                " - $" + $("#slider-range").slider("values", 1));
+        });
+    </script>
 </body>
 
 

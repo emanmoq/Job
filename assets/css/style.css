@@ -1477,6 +1477,16 @@ background: #18407C 0% 0% no-repeat padding-box !important;
 border-radius: 50%;
 top: -7px !important;
 }
+.arrow-down {
+    width: 0; 
+    height: 0; 
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    position: absolute;
+    bottom: 8px;
+    left: 44%;
+    border-top: 10px solid #18407C;
+  }
 @media(min-width:300px) and (max-width:767px){
     body{
         font-size:12px;

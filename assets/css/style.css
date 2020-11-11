@@ -1258,6 +1258,43 @@ margin-bottom:20px;
 .BlogBox .regBtn{
     margin-top:40px;
 }
+.regBtn.LoadMore{
+    margin-top:50px
+}
+.jobsHeader .case.green{
+background-color: white;
+}
+.jobsHeader .case.orange{
+    background-color: white;
+}
+.jobsHeader .intrestedJobDetails h3{
+    color:white;
+}
+.jobsHeader .intrestedtag i.fa-star{
+    color:#FFBD02
+}
+.jobsHeader .intrestedtag i,.jobsHeader .intrestedtag {
+    color:#18407C
+}
+.jobsHeader .intrestedtag{
+    background-color: white;
+}
+.jobsHeader .intrestedJobDetails{
+    width:77%;
+}
+.saveJob{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+border: 1px solid #707070;
+border-radius: 20px;
+padding: 40px 20px;
+}
+.saveJob a{
+    display: block;
+    width:130px
+}
+.saveJob .applyBtn{
+    margin-bottom: 30px;
+}
 @media(min-width:300px) and (max-width:767px){
     body{
         font-size:12px;

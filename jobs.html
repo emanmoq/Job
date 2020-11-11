@@ -17,7 +17,8 @@
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css" type="text/css">
     <link rel="stylesheet" href="assets/css/owl.carousel.css" type="text/css">
     <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
-    <link href="assets/css/rangeSlider.css" rel="stylesheet">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
 
     <link href="assets/css/style.css" rel="stylesheet">
 
@@ -89,32 +90,32 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item ">
-                              <a class="nav-link active" href="index.html">Home</a>
+                                <a class="nav-link active" href="index.html">Home</a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link" href="aboutUs.html">About Us</a>
+                                <a class="nav-link" href="aboutUs.html">About Us</a>
                             </li>
-            
+
                             <li class="nav-item ">
-                              <a class="nav-link" href="jobs.html">Job</a>
+                                <a class="nav-link" href="jobs.html">Job</a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link" href="blog.html">Blog</a>
+                                <a class="nav-link" href="blog.html">Blog</a>
                             </li>
-            
+
                             <li class="nav-item ">
-                              <a class="nav-link" href="dashboard.html">Dashboard</a>
+                                <a class="nav-link" href="dashboard.html">Dashboard</a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link" href="contact.html">Contact</a>
+                                <a class="nav-link" href="contact.html">Contact</a>
                             </li>
-            
-                          </ul>
-                          <div class="loginBtns float-right">
+
+                        </ul>
+                        <div class="loginBtns float-right">
                             <a href="login.html">Login</a>
                             <a href="reg.html">Register</a>
                             <a href="postJob.html" class="btn postJob">Job Post</a>
-                          </div>
+                        </div>
                     </div>
 
                 </nav>
@@ -350,7 +351,7 @@
                         <ul class="jobsideList">
                             <li>
                                 <label class="checkboxCont">Web Design
-                                    <input type="checkbox" >
+                                    <input type="checkbox">
                                     <span class="checkmark"></span>
                                 </label>
                             </li>
@@ -408,7 +409,7 @@
                         <ul class="jobsideList">
                             <li>
                                 <label class="checkboxCont">1 Year to 2 Year
-                                    <input type="checkbox" >
+                                    <input type="checkbox">
                                     <span class="checkmark"></span>
                                 </label>
                             </li>
@@ -430,12 +431,12 @@
                                     <span class="checkmark"></span>
                                 </label>
                             </li>
-                 
+
                         </ul>
                     </div>
                     <div class="commentBox jobsideBox">
-                        <h4 class="BlogDetailsTitle">Career Level <a href="javaScript:;" class="toggleBtn float-right"><i
-                                    class="lni lni-minus"></i></a></h4>
+                        <h4 class="BlogDetailsTitle">Career Level <a href="javaScript:;"
+                                class="toggleBtn float-right"><i class="lni lni-minus"></i></a></h4>
                         <div class="progress">
                             <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
                                 aria-valuemax="100"></div>
@@ -443,7 +444,7 @@
                         <ul class="jobsideList">
                             <li>
                                 <label class="checkboxCont">Intermediate
-                                    <input type="checkbox" >
+                                    <input type="checkbox">
                                     <span class="checkmark"></span>
                                 </label>
                             </li>
@@ -465,7 +466,7 @@
                                     <span class="checkmark"></span>
                                 </label>
                             </li>
-                 
+
                         </ul>
                     </div>
                     <div class="commentBox jobsideBox">
@@ -475,11 +476,11 @@
                                 aria-valuemax="100"></div>
                         </div>
                         <div class="sliderCon">
-                            <div id="min"></div>
-                            <div id="max"></div>
-                            <div id="slider"></div>
+                            <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+
+                            <div id="slider-range"></div>
                         </div>
-              
+
                     </div>
                 </div>
 
@@ -565,49 +566,25 @@
         crossorigin="anonymous"></script>
     <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/owl.carousel.js"></script>
-    <script type="text/javascript" src="assets/js/main.js"></script>
-    <script src="assets/js/rangeSlider.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
-    <script defer="defer">
-        $("#slider").slider({
+    <script type="text/javascript" src="assets/js/main.js"></script>
+
+    <script>
+        $( function() {
+          $( "#slider-range" ).slider({
             range: true,
             min: 0,
-            max: 70,
-            step: 1,
-            values: [22, 33],
-            slide: function (event, ui) {
-                var delay = function () {
-                    var handleIndex = $(ui.handle).index();
-                    var label = handleIndex == 1 ? '#min' : '#max';
-
-                    $(label).html(ui.value).position({
-                        my: 'center bottom',
-                        at: 'center top',
-                        of: ui.handle,
-                        offset: "0, 10"
-                    });
-                };
-
-                // wait for the ui.handle to set its position
-                setTimeout(delay, 5);
+            max: 500,
+            values: [ 75, 300 ],
+            slide: function( event, ui ) {
+              $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
             }
-        });
-
-        $('#min').html($('#slider').slider('values', 0)).position({
-            my: 'center bottom',
-            at: 'center top',
-            of: $('#slider span:eq(0)'),
-            offset: "0, 10"
-        });
-
-        $('#max').html($('#slider').slider('values', 1)).position({
-            my: 'center bottom',
-            at: 'center top',
-            of: $('#slider span:eq(1)'),
-            offset: "0, 10"
-        });
-
-    </script>
+          });
+          $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
+            " - $" + $( "#slider-range" ).slider( "values", 1 ) );
+        } );
+        </script>
 </body>
 
 

@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css" type="text/css">
     <link rel="stylesheet" href="assets/css/owl.carousel.css" type="text/css">
     <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.css" type="text/css">
 
 
     <link href="assets/css/style.css" rel="stylesheet">
@@ -476,7 +476,7 @@
                                 aria-valuemax="100"></div>
                         </div>
                         <div class="sliderCon">
-                            <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+                            <input type="text" id="amount" readonly >
 
                             <div id="slider-range"></div>
                         </div>
@@ -575,8 +575,8 @@
           $( "#slider-range" ).slider({
             range: true,
             min: 0,
-            max: 500,
-            values: [ 75, 300 ],
+            max: 30000,
+            values: [ 25000 ,30000  ],
             slide: function( event, ui ) {
               $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
             }

@@ -584,7 +584,7 @@ font-size:17px}
 background: #FFFFFF 0% 0% no-repeat padding-box;
 box-shadow: 0px 3px 26px #00000029;
 border-radius: 20px;
-height: 475px;
+height: 500px;
 margin-bottom:20px;
 }
 .careerBox:hover .careerContent h4{
@@ -1110,6 +1110,7 @@ background-color: #18407C;
         border-radius: 20px;
         padding:30px 0;
         text-align: center;
+        margin-bottom:20px;
       }
 .DashboardIcon{
     margin:auto;
@@ -1142,6 +1143,120 @@ background-color: #18407C;
 }
 .rightSide .regBox .regBtn{
     width:auto
+}
+.BlogDetailsImg{
+    width:100%;
+    margin-bottom: 43px;
+    border-radius: 20px;
+    overflow:hidden;
+}
+.BlogDetailsDate {
+  margin-bottom:25px;
+}
+.BlogDetailsDate span a{
+    color:#18407C;
+    font-size: 1.100em;
+    margin-right:20px;
+}
+.BlogDetailsTitle{
+    font-size: 1.650em;
+    color:#000000;
+    margin-bottom:20px;
+    font-weight: 500;
+}
+.BlogDetailsContent p{
+    font-size:1.100em;
+    color:#000000;
+    margin-bottom: 15px;
+}
+.BlogDetailsContent.careerBox{
+    margin-bottom:35px;
+}
+
+.BlogDetails .careerDate span a{
+    font-size: 1em;
+}
+.commentBox{
+    box-shadow: 0px 3px 26px #00000029;
+border-radius: 20px;
+padding: 20px;
+margin-bottom:20px;
+}
+.commentImg{
+    width:80px;
+    height:80px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right:20px;
+
+    display: inline-block;
+}
+.commentDetails .BlogDetailsTitle{
+    font-weight: 400;
+    margin:0;
+}
+.commentDetails{
+    display: inline-block;
+    width:84%
+}
+.commentDetails span{
+    display: block;
+    font-size:1.100em;
+    color:#8C98AA;
+}
+.commentDetails p{
+    font-size: 1.100em;
+    color:#000000;
+    margin-top:25px;
+}
+.commentBox.replyBox{
+    margin-left:60px;
+}
+.comments{
+    margin-top:30px;
+}
+.searchBlog {
+    position: relative;
+}
+.blogBox .BlogDetailsTitle{
+    margin-bottom: 25px;
+}
+.searchBlog i{
+    position: absolute;
+    right:10px;
+    color:#8C98AA;
+    top:10px;
+    font-size:14px
+}
+.latestBlogImg{
+    width:60px;
+    height:60px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-right:10px;
+}
+.latestBlogDetails h6,span{
+    font-size: 1.00em;
+    color:#121212;
+    margin:0;
+}
+.latestBlogDetails span{
+  color:  #8C98AA
+}
+.latestBlog{
+    margin-bottom: 30px;
+}
+.leavReply .halfFormGroup{
+    width:48.5%
+}
+.leavReply{
+    margin-top:50px
+}
+.leavReply .regBtn{
+    margin-top:50px;
+}
+.BlogBox .regBtn{
+    margin-top:40px;
 }
 @media(min-width:300px) and (max-width:767px){
     body{
@@ -1255,10 +1370,31 @@ margin-top:20px;
 .SocialMediaBox{
     width:100%
 }  
+.DashboardBody{
+    display: block;
+}
 .leftSide,.rightSide{
     width:100%;
     float: none;
 }   
+.rightSide{
+padding:30px 10px;
+}
+.regBox{
+    margin-bottom: 20px;;
+}
+.commentDetails{
+    width:80%;
+}
+.commentImg {
+    width: 50px;
+    height: 50px;
+
+    margin-right: 9px;}
+}
+.commentBox .regBtn {
+    width: 91px;}
+
 }
 @media(min-width:768px) and (max-width:1023px){
 
@@ -1332,6 +1468,16 @@ height:530px
                         height: 70px;}
                         .NameSection h4 {
                             font-size: 1.350em;}
+                            .regBox{
+                                margin-bottom: 20px;;
+                            }
+                            .leftSide,.rightSide{
+                                width:100%;
+                                float: none;
+                            }
+                            .DashboardBody{
+                                display: block;
+                            }
 }
 @media(min-width:1024px) and (max-width:1100px){
     .navbar-expand-lg .navbar-nav .nav-link, .loginBtns a {
@@ -1362,4 +1508,10 @@ margin-right:10px;
     width: 48%;}
     .threeFormGrpup {
         width: 31%;}
+        .rightSide{
+           padding:30px 10px;
+        }
+        .intrestedJobDetails {
+width:80%;
+        }
 }

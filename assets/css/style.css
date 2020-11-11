@@ -466,6 +466,7 @@ margin-right: 10px;
 color:#8C98AA;
 display: block;
 float: left;
+margin-bottom: 10px;;
 }
 .intrestedtag i{
     color:#CCB892;
@@ -1344,7 +1345,117 @@ font-size: 1.650em;
     margin-right: 15px;;
     margin-bottom: 15px;;
 }
+.jobsHeader .intrestedJobDetails .case{
+    margin-top:0;
+}
+.innerBody .searchBox{
+    box-shadow: 0px 3px 26px #00000029;
+    margin-bottom:80px
+}
+.jobTitle{
+    font-size:1.818em;
+    color:#000
+}
+.jobBody .IntrestedImg{
+    width:90px;
+    height:90px;
+}
+.jobBody .intrestedJobDetails {
+    width:84%;
+}
+.jobBody .regBtn.loadMore{
+    width:auto;
+}
+.checkboxCont{
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.checkboxCont input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  .checkmark {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border:1px solid #70707080;
+  }
+  .container:hover input ~ .checkmark {
+    background-color:white;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .checkboxCont input:checked ~ .checkmark {
+    background-color: #18407C;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .checkboxCont input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .checkboxCont .checkmark:after {
+    left: 7px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  .jobsideList li{
+      margin-bottom: 15px;;
+  }
+  .jobsideBox {
+      margin-bottom: 20px;
+  }
+  .jobsideBox .BlogDetailsTitle{
+      margin-bottom: 0;;
+  }
+  .progress{
+      margin-top:10px;
+      height:2px;
+      margin-bottom: 20px;
+  }
+  .progress-bar{
+      background-color: #18407C;
+      width:20%;
+     
+  }
+  #slider {
+    width: 80%;
+    margin-left: 1em;
+}
 
+#min,
+#max {
+    position: absolute !important;
+
+}
 @media(min-width:300px) and (max-width:767px){
     body{
         font-size:12px;
@@ -1412,6 +1523,7 @@ height:60px;
     color: #8C98AA;
     display: block;
     float: left;
+
 }
 .Popular{
 margin-top:20px;
@@ -1485,7 +1597,34 @@ padding:30px 10px;
 .commentBox.replyBox .commentDetails {
     width:100%;
 }
+.jobsHeader .intrestedJobDetails{
+    width: 75%;
 }
+.saveJob{
+    float: none !important;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+.saveJob .applyBtn{
+    margin-bottom: 30px;;
+}
+.saveJob a{
+    margin:auto;
+
+}
+.innerContent{
+    padding-top:30px;
+    background-repeat: no-repeat;
+}
+.jobsHeader .IntrestedImg  {  width: 65px;
+height: 65px;}
+.innerBody{
+    padding:30px 0;
+}
+}
+
+
 
 @media(min-width:768px) and (max-width:1023px){
 

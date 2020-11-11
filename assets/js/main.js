@@ -34,6 +34,13 @@ jQuery(function ($) {
     }
 
 });
+$('.toggleBtn').click(function () {
+  $('.toggleBtn').not(this).find('i:first').removeClass('lni lni-minus').addClass('lni lni-plus ');
+  $(this).find('i:first').toggleClass('lni lni-minus lni lni-plus');
+})
+$('.toggleBtn').click(function () {
+  $(this).parent().parent().find('.jobsideList').slideToggle(400);
+});
     
 });
 

@@ -131,31 +131,40 @@
             </div>
         </div>
     </div>
-    <div class="DashboardBody">
+    <div class="DashboardBody clearfix">
         <div class="leftSide">
             <div class="NameSection clearfix">
                 <div class="DashboardImg float-left">
-                <img src="assets/images/Dashboard/1.png" alt="">
+                    <img src="assets/images/Dashboard/1.png" alt="">
                 </div>
                 <h4 class="float-left">John William</h4>
             </div>
-            <div class="nav DashboardNav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                <a class="nav-link active" id="Dashboard-home-tab" data-toggle="pill" href="#Dashboard-home" role="tab" aria-controls="Dashboard-home" aria-selected="true"><i class="lni lni-layout"></i> Dashboard</a>
-                <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false"><i class="fas fa-suitcase"></i>Applied Jobs</a>
-                <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false"><i class="lni lni-heart"></i>Saved Jobs</a>
-                <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false"><i class="lni lni-write"></i>Posted Jobs</a>
-                <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false"><i class="far fa-user"></i> My Profile</a>
-                <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false"><i class="fas fa-sign-out-alt"></i> Logout</a>
+            <div class="nav DashboardNav flex-column nav-pills" id="v-pills-tab" role="tablist"
+                aria-orientation="vertical">
+                <a class="nav-link active" id="Dashboard-home-tab" data-toggle="pill" href="#Dashboard-home" role="tab"
+                    aria-controls="Dashboard-home" aria-selected="true"><i class="lni lni-layout"></i> Dashboard</a>
+                <a class="nav-link" id="AppliedJobs-tab" data-toggle="pill" href="#AppliedJobs" role="tab"
+                    aria-controls="AppliedJobs" aria-selected="false"><i class="fas fa-suitcase"></i>Applied Jobs</a>
+                <a class="nav-link" id="savedJob-tab" data-toggle="pill" href="#savedJob" role="tab"
+                    aria-controls="savedJob" aria-selected="false"><i class="lni lni-heart"></i>Saved Jobs</a>
+                <a class="nav-link" id="postedJob-tab" data-toggle="pill" href="#postedJob" role="tab"
+                    aria-controls="postedJob" aria-selected="false"><i class="lni lni-write"></i>Posted Jobs</a>
+                <a class="nav-link" id="profile-tab" data-toggle="pill" href="#profile" role="tab"
+                    aria-controls="profile" aria-selected="false"><i class="far fa-user"></i> My Profile</a>
+                <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab"
+                    aria-controls="v-pills-settings" aria-selected="false"><i class="fas fa-sign-out-alt"></i>
+                    Logout</a>
 
-  
+
             </div>
         </div>
         <div class="rightSide">
             <div class="tab-content" id="v-pills-tabContent">
-                <div class="tab-pane fade show active" id="Dashboard-home" role="tabpanel" aria-labelledby="Dashboard-home-tab">
+                <div class="tab-pane fade show active" id="Dashboard-home" role="tabpanel"
+                    aria-labelledby="Dashboard-home-tab">
                     <div class="container">
                         <div class="row">
-                            <div  class="col-lg-3 col-md-6">
+                            <div class="col-lg-3 col-md-6">
                                 <div class="DashboardBox">
                                     <div class="DashboardIcon">
                                         <i class="lni lni-layout"></i>
@@ -167,38 +176,38 @@
 
                                 </div>
                             </div>
-                            <div  class="col-lg-3 col-md-6">
+                            <div class="col-lg-3 col-md-6">
                                 <div class="DashboardBox">
                                     <div class="DashboardIcon">
-                                        <i class="lni lni-layout"></i>
+                                        <i class="fas fa-suitcase"></i>
                                     </div>
-                                    <h4>1500</h4>
+                                    <h4>189</h4>
                                     <p>
-                                        Companies View
+                                        Applied Jobs
                                     </p>
 
                                 </div>
                             </div>
-                            <div  class="col-lg-3 col-md-6">
+                            <div class="col-lg-3 col-md-6">
                                 <div class="DashboardBox">
                                     <div class="DashboardIcon">
-                                        <i class="lni lni-layout"></i>
+                                        <i class="lni lni-heart"></i>
                                     </div>
                                     <h4>1500</h4>
                                     <p>
-                                        Companies View
+                                        Saved Jobs
                                     </p>
 
                                 </div>
                             </div>
-                            <div  class="col-lg-3 col-md-6">
+                            <div class="col-lg-3 col-md-6">
                                 <div class="DashboardBox">
                                     <div class="DashboardIcon">
-                                        <i class="lni lni-layout"></i>
+                                        <i class="lni lni-write"></i>
                                     </div>
-                                    <h4>1500</h4>
+                                    <h4>120</h4>
                                     <p>
-                                        Companies View
+                                        Posted Job
                                     </p>
 
                                 </div>
@@ -207,10 +216,369 @@
                     </div>
 
                 </div>
-                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">...</div>
-                <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">...</div>
-                <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...</div>
-              </div>
+                <div class="tab-pane fade" id="AppliedJobs" role="tabpanel" aria-labelledby="AppliedJobs-tab">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <div class="IntrestedBox clearfix">
+                                    <div class="IntrestedImg float-left">
+                                        <img src="assets/images/Home/icon1.png" alt="">
+                                    </div>
+
+                                    <div class="intrestedJobDetails float-left">
+                                        <span class="case green"><i class="lni lni-briefcase"></i> Full Time</span>
+                                        <h3>Web Designer, Graphics Designer, UI/ UX Designer</h3>
+                                        <div class="tags">
+                                            <span class=" intrestedtag"><i class="lni lni-briefcase"></i> 5 Jobs
+                                                avilable</span>
+                                            <span class=" intrestedtag"><i
+                                                    class="lni lni-wallet"></i>$15000-$16000</span>
+                                            <span class=" intrestedtag"><i class="lni lni-map-marker"></i>Sydney drive,
+                                                AUS 456</span>
+                                            <span class=" intrestedtag"><i class="fas fa-clock"></i>30 Min ago</span>
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                                <div class="IntrestedBox clearfix">
+                                    <div class="IntrestedImg float-left">
+                                        <img src="assets/images/Home/icon2.png" alt="">
+                                    </div>
+                                    <div class="intrestedJobDetails float-left">
+                                        <span class="case orange"><i class="lni lni-briefcase"></i> Full Time</span>
+                                        <h3>Web Designer, Graphics Designer, UI/ UX Designer</h3>
+                                        <div class="tags">
+                                            <span class=" intrestedtag"><i class="lni lni-briefcase"></i> 5 Jobs
+                                                avilable</span>
+                                            <span class=" intrestedtag"><i
+                                                    class="lni lni-wallet"></i>$15000-$16000</span>
+                                            <span class=" intrestedtag"><i class="lni lni-map-marker"></i>Sydney drive,
+                                                AUS 456</span>
+                                            <span class=" intrestedtag"><i class="fas fa-clock"></i>30 Min ago</span>
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                                <div class="IntrestedBox clearfix">
+                                    <div class="IntrestedImg float-left">
+                                        <img src="assets/images/Home/icon3.png" alt="">
+                                    </div>
+                                    <div class="intrestedJobDetails float-left">
+                                        <span class="case green"><i class="lni lni-briefcase"></i> Full Time</span>
+                                        <h3>Web Designer, Graphics Designer, UI/ UX Designer</h3>
+                                        <div class="tags">
+                                            <span class=" intrestedtag"><i class="lni lni-briefcase"></i> 5 Jobs
+                                                avilable</span>
+                                            <span class=" intrestedtag"><i
+                                                    class="lni lni-wallet"></i>$15000-$16000</span>
+                                            <span class=" intrestedtag"><i class="lni lni-map-marker"></i>Sydney drive,
+                                                AUS 456</span>
+                                            <span class=" intrestedtag"><i class="fas fa-clock"></i>30 Min ago</span>
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                                <div class="IntrestedBox clearfix">
+                                    <div class="IntrestedImg float-left">
+                                        <img src="assets/images/Home/icon4.png" alt="">
+                                    </div>
+                                    <div class="intrestedJobDetails float-left">
+                                        <span class="case green"><i class="lni lni-briefcase"></i> Full Time</span>
+                                        <h3>Web Designer, Graphics Designer, UI/ UX Designer</h3>
+                                        <div class="tags">
+                                            <span class=" intrestedtag"><i class="lni lni-briefcase"></i> 5 Jobs
+                                                avilable</span>
+                                            <span class=" intrestedtag"><i
+                                                    class="lni lni-wallet"></i>$15000-$16000</span>
+                                            <span class=" intrestedtag"><i class="lni lni-map-marker"></i>Sydney drive,
+                                                AUS 456</span>
+                                            <span class=" intrestedtag"><i class="fas fa-clock"></i>30 Min ago</span>
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                                <a href="#" class="Browse BrowseAll btn float-right">Browse all Jobs</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="savedJob" role="tabpanel" aria-labelledby="savedJob-tab">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <div class="IntrestedBox clearfix">
+                                    <div class="IntrestedImg float-left">
+                                        <img src="assets/images/Home/icon1.png" alt="">
+                                    </div>
+
+                                    <div class="intrestedJobDetails float-left">
+                                        <span class="case green"><i class="lni lni-briefcase"></i> Full Time</span>
+                                        <h3>Web Designer, Graphics Designer, UI/ UX Designer</h3>
+                                        <div class="tags">
+                                            <span class=" intrestedtag"><i class="lni lni-briefcase"></i> 5 Jobs
+                                                avilable</span>
+                                            <span class=" intrestedtag"><i
+                                                    class="lni lni-wallet"></i>$15000-$16000</span>
+                                            <span class=" intrestedtag"><i class="lni lni-map-marker"></i>Sydney drive,
+                                                AUS 456</span>
+                                            <span class=" intrestedtag"><i class="fas fa-clock"></i>30 Min ago</span>
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                                <div class="IntrestedBox clearfix">
+                                    <div class="IntrestedImg float-left">
+                                        <img src="assets/images/Home/icon2.png" alt="">
+                                    </div>
+                                    <div class="intrestedJobDetails float-left">
+                                        <span class="case orange"><i class="lni lni-briefcase"></i> Full Time</span>
+                                        <h3>Web Designer, Graphics Designer, UI/ UX Designer</h3>
+                                        <div class="tags">
+                                            <span class=" intrestedtag"><i class="lni lni-briefcase"></i> 5 Jobs
+                                                avilable</span>
+                                            <span class=" intrestedtag"><i
+                                                    class="lni lni-wallet"></i>$15000-$16000</span>
+                                            <span class=" intrestedtag"><i class="lni lni-map-marker"></i>Sydney drive,
+                                                AUS 456</span>
+                                            <span class=" intrestedtag"><i class="fas fa-clock"></i>30 Min ago</span>
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                                <div class="IntrestedBox clearfix">
+                                    <div class="IntrestedImg float-left">
+                                        <img src="assets/images/Home/icon3.png" alt="">
+                                    </div>
+                                    <div class="intrestedJobDetails float-left">
+                                        <span class="case green"><i class="lni lni-briefcase"></i> Full Time</span>
+                                        <h3>Web Designer, Graphics Designer, UI/ UX Designer</h3>
+                                        <div class="tags">
+                                            <span class=" intrestedtag"><i class="lni lni-briefcase"></i> 5 Jobs
+                                                avilable</span>
+                                            <span class=" intrestedtag"><i
+                                                    class="lni lni-wallet"></i>$15000-$16000</span>
+                                            <span class=" intrestedtag"><i class="lni lni-map-marker"></i>Sydney drive,
+                                                AUS 456</span>
+                                            <span class=" intrestedtag"><i class="fas fa-clock"></i>30 Min ago</span>
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                                <div class="IntrestedBox clearfix">
+                                    <div class="IntrestedImg float-left">
+                                        <img src="assets/images/Home/icon4.png" alt="">
+                                    </div>
+                                    <div class="intrestedJobDetails float-left">
+                                        <span class="case green"><i class="lni lni-briefcase"></i> Full Time</span>
+                                        <h3>Web Designer, Graphics Designer, UI/ UX Designer</h3>
+                                        <div class="tags">
+                                            <span class=" intrestedtag"><i class="lni lni-briefcase"></i> 5 Jobs
+                                                avilable</span>
+                                            <span class=" intrestedtag"><i
+                                                    class="lni lni-wallet"></i>$15000-$16000</span>
+                                            <span class=" intrestedtag"><i class="lni lni-map-marker"></i>Sydney drive,
+                                                AUS 456</span>
+                                            <span class=" intrestedtag"><i class="fas fa-clock"></i>30 Min ago</span>
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                                <a href="#" class="Browse BrowseAll btn float-right">Browse all Jobs</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="postedJob" role="tabpanel" aria-labelledby="postedJob-tab">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <div class="IntrestedBox clearfix">
+                                    <div class="IntrestedImg float-left">
+                                        <img src="assets/images/Home/icon1.png" alt="">
+                                    </div>
+
+                                    <div class="intrestedJobDetails float-left">
+                                        <span class="case green"><i class="lni lni-briefcase"></i> Full Time</span>
+                                        <h3>Web Designer, Graphics Designer, UI/ UX Designer</h3>
+                                        <div class="tags">
+                                            <span class=" intrestedtag"><i class="lni lni-briefcase"></i> 5 Jobs
+                                                avilable</span>
+                                            <span class=" intrestedtag"><i
+                                                    class="lni lni-wallet"></i>$15000-$16000</span>
+                                            <span class=" intrestedtag"><i class="lni lni-map-marker"></i>Sydney drive,
+                                                AUS 456</span>
+                                            <span class=" intrestedtag"><i class="fas fa-clock"></i>30 Min ago</span>
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                                <div class="IntrestedBox clearfix">
+                                    <div class="IntrestedImg float-left">
+                                        <img src="assets/images/Home/icon2.png" alt="">
+                                    </div>
+                                    <div class="intrestedJobDetails float-left">
+                                        <span class="case orange"><i class="lni lni-briefcase"></i> Full Time</span>
+                                        <h3>Web Designer, Graphics Designer, UI/ UX Designer</h3>
+                                        <div class="tags">
+                                            <span class=" intrestedtag"><i class="lni lni-briefcase"></i> 5 Jobs
+                                                avilable</span>
+                                            <span class=" intrestedtag"><i
+                                                    class="lni lni-wallet"></i>$15000-$16000</span>
+                                            <span class=" intrestedtag"><i class="lni lni-map-marker"></i>Sydney drive,
+                                                AUS 456</span>
+                                            <span class=" intrestedtag"><i class="fas fa-clock"></i>30 Min ago</span>
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                                <div class="IntrestedBox clearfix">
+                                    <div class="IntrestedImg float-left">
+                                        <img src="assets/images/Home/icon3.png" alt="">
+                                    </div>
+                                    <div class="intrestedJobDetails float-left">
+                                        <span class="case green"><i class="lni lni-briefcase"></i> Full Time</span>
+                                        <h3>Web Designer, Graphics Designer, UI/ UX Designer</h3>
+                                        <div class="tags">
+                                            <span class=" intrestedtag"><i class="lni lni-briefcase"></i> 5 Jobs
+                                                avilable</span>
+                                            <span class=" intrestedtag"><i
+                                                    class="lni lni-wallet"></i>$15000-$16000</span>
+                                            <span class=" intrestedtag"><i class="lni lni-map-marker"></i>Sydney drive,
+                                                AUS 456</span>
+                                            <span class=" intrestedtag"><i class="fas fa-clock"></i>30 Min ago</span>
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                                <div class="IntrestedBox clearfix">
+                                    <div class="IntrestedImg float-left">
+                                        <img src="assets/images/Home/icon4.png" alt="">
+                                    </div>
+                                    <div class="intrestedJobDetails float-left">
+                                        <span class="case green"><i class="lni lni-briefcase"></i> Full Time</span>
+                                        <h3>Web Designer, Graphics Designer, UI/ UX Designer</h3>
+                                        <div class="tags">
+                                            <span class=" intrestedtag"><i class="lni lni-briefcase"></i> 5 Jobs
+                                                avilable</span>
+                                            <span class=" intrestedtag"><i
+                                                    class="lni lni-wallet"></i>$15000-$16000</span>
+                                            <span class=" intrestedtag"><i class="lni lni-map-marker"></i>Sydney drive,
+                                                AUS 456</span>
+                                            <span class=" intrestedtag"><i class="fas fa-clock"></i>30 Min ago</span>
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                                <a href="#" class="Browse BrowseAll btn float-right">Browse all Jobs</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-6 col-md-12">
+                                <div class="regBox">
+                                    <form>
+            
+                                        <label for="upladImg">
+                                            <div class="uploadImg uploadprofileImg">
+                                                <input type="file" id="upladImg" onchange="readURL2(this)">
+                                                <img src="assets/images/Dashboard/1.png" alt="">
+                                            </div><i class="fas fa-camera"></i>change your photo
+                                        </label>
+                                        <script>
+                                            function readURL2(input) {
+                                                var $input = input;
+                                                if (input.files && input.files[0]) {
+                                                    var reader = new FileReader();
+                                                    reader.onload = function (e) {
+                                                        $($input).next()
+                                                            .attr('src', e.target.result)
+                                                          
+                                                      
+                                                        $(".uploadImg").css("padding","0")
+                                                    };
+                                                    reader.readAsDataURL(input.files[0]);
+                                                }
+                                            }
+                                        </script>
+                                        <div class="form-group">
+                                            <label for=""> Your Name</label>
+                                            <input type="text" class="form-control" placeholder="John William">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for=""> Your Email</label>
+                                            <input type="email" class="form-control" placeholder="johnwilliam@info">
+                                        </div>
+                             
+                                        <div class="form-group">
+                                            <label for="">Phone Number</label>
+                                            <input type="text" class="form-control" placeholder="012345 789">
+                                        </div>
+                                 
+                                        <div class="submit text-center">
+                                            <button class="btn regBtn">Save Changes</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-8">
+                                <div class="regBox">
+                                    <form>
+                                 <h4>Changes Password</h4>
+                                     
+                                        <div class="form-group">
+                                            <label for="">current Password</label>
+                                            <input type="password" class="form-control" placeholder="***********">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">New  Password</label>
+                                            <input type="password" class="form-control" placeholder="***********">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for=""> Confirn New  Password</label>
+                                            <input type="password" class="form-control" placeholder="***********">
+                                        </div>
+                                 
+                                        <div class="submit text-center">
+                                            <button class="btn regBtn">Change Password</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
         </div>
     </div>
     <footer class="innerFooter">

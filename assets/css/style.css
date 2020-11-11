@@ -463,7 +463,9 @@ color:#18407C;
     box-shadow: 0px 3px 26px #0000001A;
 border-radius: 10px;
 margin-right: 10px;
-color:#8C98AA
+color:#8C98AA;
+display: block;
+float: left;
 }
 .intrestedtag i{
     color:#CCB892;
@@ -838,6 +840,10 @@ padding:50px;
     padding:25px 10px; 
     overflow: hidden;
 
+    
+}
+.uploadprofileImg.uploadImg{
+    padding:0;;
 }
 .regBox form label i{
     margin-right:5px;
@@ -859,6 +865,9 @@ padding:50px;
 }
 .uploadImg img{
     display: none;
+}
+.uploadprofileImg.uploadImg img{
+    display: block;
 }
 .form-group{
     width:100%;
@@ -1054,7 +1063,8 @@ background-color: #0077B5;
         background: #FFFFFF 0% 0% no-repeat padding-box;
 box-shadow: 0px 3px 26px #00000029;
 padding:50px 0;
-
+position: relative;
+z-index: 1;
       }
       .NameSection{
           padding:0 30px;
@@ -1078,7 +1088,8 @@ background-color: #18407C;
       }
       .NameSection h4{
           font-size:1.650em;
-          color:#121212
+          color:#121212;
+          line-height: 2.5;
       }
       .DashboardNav .nav-link i{
      margin-right: 15px;;
@@ -1091,8 +1102,8 @@ background-color: #18407C;
           width:75%;
           float: left;
           padding:70px 100px;;
-          
-
+          position: relative;
+          z-index: 1;
       }
       .DashboardBox{
         box-shadow: 0px 3px 26px #00000029;
@@ -1123,6 +1134,14 @@ background-color: #18407C;
     font-size: 1.100em;
     color:#8C98AA;
     margin:0;
+}
+.rightSide .IntrestedImg{
+    width: 80px;
+    height: 80px;
+    padding: 20px 24px;
+}
+.rightSide .regBox .regBtn{
+    width:auto
 }
 @media(min-width:300px) and (max-width:767px){
     body{
@@ -1235,7 +1254,11 @@ margin-top:20px;
     width: 100%;}   
 .SocialMediaBox{
     width:100%
-}     
+}  
+.leftSide,.rightSide{
+    width:100%;
+    float: none;
+}   
 }
 @media(min-width:768px) and (max-width:1023px){
 
@@ -1293,7 +1316,22 @@ height:530px
                             width: 100%;}   
                         .SocialMediaBox{
                             width:100%
-                        }          
+                        } 
+                        .DashboardBox{
+                            margin-bottom: 20px;
+                        }   
+                        .leftSide{
+                            width:40%;
+                        }     
+                    .rightSide{
+                        width:60%;
+                        padding:50px 20px
+                    }
+                    .DashboardImg {
+                        width: 70px;
+                        height: 70px;}
+                        .NameSection h4 {
+                            font-size: 1.350em;}
 }
 @media(min-width:1024px) and (max-width:1100px){
     .navbar-expand-lg .navbar-nav .nav-link, .loginBtns a {

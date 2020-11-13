@@ -41,6 +41,14 @@ $('.toggleBtn').click(function () {
 $('.toggleBtn').click(function () {
   $(this).parent().parent().find('.jobsideList').slideToggle(400);
 });
-    
+$(".close").click(function(){
+  $(".overlay").css("display","none");
+  $(this).parent().collapse('hide');
+});
+
+    $(".navbar-toggler").click(function(){
+      $(".overlay").css("display","block");
+      
+    });
 });
 

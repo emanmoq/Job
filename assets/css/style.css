@@ -1488,6 +1488,40 @@ top: -7px !important;
     border-top: 10px solid #18407C;
   }
 @media(min-width:300px) and (max-width:767px){
+    .navbar-collapse{
+        position: absolute;
+    background: white;
+    width: 65%;
+    right: 0;
+    padding: 20px 0;
+    top: 0;
+    height: 600px;
+    z-index:99999999999999999999;
+    box-shadow: 0 5px 20px rgba(0,0,0,.2);
+    padding-right:20px;
+    }
+    .overlay{
+        background-color:rgba(0,0,0,.6);
+        height:100%;
+        position: absolute;
+        top:0;
+        left:0;
+        z-index: 1111;
+        width:100%;
+        display: none;
+
+    }
+    .navbar-expand-lg .navbar-nav  .nav-link{
+        padding: 10px 20px;
+        border-left:3px solid transparent;
+    }
+
+    .nav-item .nav-link.active{
+        border-left:3px solid #18407C
+    }
+    .navbar-expand-lg .navbar-nav  .nav-link:hover{
+        border-left:3px solid #18407C 
+    }
     body{
         font-size:12px;
     }
@@ -1495,13 +1529,14 @@ top: -7px !important;
         display: block;
     }
     .loginBtns{
+        padding:0 20px;
         margin-top:5px;
         float: none !important;
     }
     .loginBtns  a{
         padding:0;
         display: block;
-        margin-top:5px
+        margin-top:10px
     }
     .CompaniesCar .owl-stage-outer { 
         overflow: hidden;

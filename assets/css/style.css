@@ -1498,7 +1498,7 @@ top: -7px !important;
     width: 65%;
     right: 0;
     padding: 20px 0;
-    top: 0;
+    top:-35px;
     height: 600px;
     z-index:99999999999999999999;
     box-shadow: 0 5px 20px rgba(0,0,0,.2);
